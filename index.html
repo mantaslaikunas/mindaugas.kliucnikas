@@ -6,7 +6,7 @@
 <title>Modern Design Example</title>
 <style>
   /* Reset some default styles */
-  body, h1, p {
+  body, h1, p, img {
     margin: 0;
     padding: 0;
   }
@@ -15,7 +15,7 @@
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
   }
@@ -27,6 +27,7 @@
     padding: 20px;
     max-width: 400px;
     width: 100%;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -39,6 +40,26 @@
     color: #666;
     font-size: 16px;
     line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .photo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .photo {
+    width: 18%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
   }
 </style>
 </head>
@@ -49,6 +70,23 @@
     Sakiau jam ok, davai duok sąskaitą ir aš pervesiu. Davė "buhalterės" sąskaitą Rūta Škarnulytė LT263250048642654009 ir liepė nurodyti savo asmens kodą 39210144086 kaip mokėjimo paskirtį.
       Vėliau nebeatrašė, nes susisiekiau su Rūta Škarnulyte per instagram (nes galvojau, kad Rūta neįsivėlusi į apgavystęs) :) O Rūtą informavo Mindaugą ir Mindaugas man šovė ignorą.
     </p>
+  </div>
+    <div class="photo-container">
+    <div class="photo">
+      <img src="./1.png" alt="Photo 1">
+    </div>
+    <div class="photo">
+      <img src="./2.png" alt="Photo 2">
+    </div>
+          <div class="photo">
+      <img src="./3.png" alt="Photo 3">
+    </div>
+          <div class="photo">
+      <img src="./4.png" alt="Photo 4">
+    </div>
+          <div class="photo">
+      <img src="./5.png" alt="Photo 5">
+    </div>
   </div>
 </body>
 </html>
